@@ -1,0 +1,287 @@
+/* Style untuk navbar */
+.navbar {
+    position: fixed; /* Membuat navbar tetap berada di atas saat di-scroll */
+    top: 0; /* Menempatkan navbar di bagian atas halaman */
+    left: 0;
+    right: 0;
+    z-index: 999; /* Mengatur tumpukan (z-index) untuk memastikan navbar tampil di atas konten lain */
+    overflow: hidden;
+    padding: 20px 0; /* Padding atas dan bawah diatur */
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+    justify-content: space-between; /* Menengahkan elemen secara horizontal */
+    align-items: center; /* Tengahkan elemen secara vertikal */
+}
+
+
+/* Style untuk logo */
+.navbar .logo {
+    float: left;
+    margin: 0 20px 0 20px; /* Jarak antara logo dan tepi navbar */
+    height: 50px; /* Tinggi logo */
+}
+
+/* Style untuk nama komunitas */
+.navbar .komunitas {
+    color: #686868; /* Warna teks nama komunitas diganti sesuai kebutuhan */
+    font-family: "Red Hat Text", sans-serif; /* Font nama komunitas */
+    font-size: 20px; /* Ukuran font nama komunitas */
+    font-style: normal; /* Gaya teks */
+    font-weight: bold; /* Ketebalan teks */
+    line-height: 76.3%; /* Spasi baris */
+    letter-spacing: -0.6px; /* Jarak antar huruf */
+    display: flex; /* Menggunakan flexbox untuk mengatur posisi */
+    align-items: center; /* Tengahkan elemen secara vertikal */
+    margin: 15px 0; /* Tambahkan margin atas dan bawah */
+    float: left; /* Menggunakan float untuk menempatkan nama komunitas sebelah logo */
+}
+
+/* Style untuk menu */
+.navbar .menu {
+    float: right;
+    list-style-type: none; /* Menghapus tanda bulatan dari daftar menu */
+    margin: 15px 0; /* Tambahkan margin atas dan bawah */
+    padding-left: 10px;
+}
+
+/* Style untuk item menu */
+.navbar .menu-item {
+    display: inline; /* Item menu ditampilkan dalam satu baris */
+    margin: 0 15px; /* Jarak antara item menu */
+}
+
+/* Style untuk tautan menu */
+.navbar .menu-item a {
+    color: #686868; /* Warna teks tautan menu diganti sesuai kebutuhan */
+    text-decoration: none; /* Menghapus garis bawah tautan */
+    font-size: 18px; /* Ukuran font menu */
+}
+
+/* Style untuk tautan menu saat dihover */
+.navbar .menu-item a:hover {
+    color: #947CFF;
+    font-family: "Red Hat Text";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 76.3%; /* 15.26px */
+    letter-spacing: -0.6px;
+    text-decoration: underline; /* Garis bawah saat dihover */
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('public/images/dsc-09481.png'); /* Ganti dengan URL gambar latar belakang Anda */
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1; /* Mengatur lapisan latar belakang di bawah konten */
+}
+
+
+
+
+
+/* CSS untuk teks di header */
+.header-text {
+    text-align: left; /* Teks diatur menjadi rata kiri */
+    padding-top: 300px; /* Jarak atas dari header */
+    padding-left: 50px;
+    color: #41403C;
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 30px; /* Ukuran font yang lebih kecil */
+    font-weight: 700;
+    line-height: 0.25; /* Spasi baris yang lebih dekat */
+}
+
+/* CSS untuk teks subheader */
+.subheader-text {
+    text-align: left; /* Teks diatur menjadi rata kiri */
+    padding-left: 50px;
+    color: #39239E;
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 40px; /* Ukuran font yang lebih kecil */
+    font-weight: 700;
+    line-height: 1.2; /* Spasi baris yang lebih dekat */
+}
+
+
+
+
+
+/* CSS untuk kontainer "About Us" */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff; /* Warna latar belakang kotak "About Us" */
+    margin-top: 400px; /* Menambahkan margin atas untuk menjatuhkan elemen */
+}
+
+/* CSS untuk gambar "About Us" */
+.about-image img {
+    padding: 20px;
+    width: 376px;
+    height: 331px;
+    flex-shrink: 0;
+}
+
+/* CSS untuk teks "About Us" */
+.about-text {
+    margin-left: 20px; /* Jarak antara gambar dan teks "About Us" */
+}
+
+.about-text h2 {
+    width: 209px;
+    height: 45px;
+    flex-shrink: 0;
+    color: #39239E;
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.3; /* 30.52px */
+    letter-spacing: -1.2px;
+}
+
+.about-text p {
+    width: 810px;
+    height: auto;
+    color: #000;
+    text-align: justify;
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.3; /* 19.075px */
+    letter-spacing: -0.75px;
+}
+
+/* CSS untuk gaya daftar angka (list) */
+ol {
+    list-style-type: decimal; /* Jenis gaya list angka */
+    margin-left: 20px; /* Margin kiri untuk list */
+}
+
+ol li {
+    color: #000000; /* Warna teks daftar angka */
+    font-family: "Red Hat Text", sans-serif; /* Font daftar angka */
+    font-size: 25px; /* Ukuran font daftar angka */
+    font-style: normal; /* Gaya teks */
+    font-weight: 300; /* Ketebalan teks */
+    line-height: 1.3; /* Spasi baris */
+    letter-spacing: -0.75px; /* Jarak antar huruf */
+    max-width: 750px; /* Lebar maksimum untuk teks daftar angka */
+    text-align: justify; /* Mengatur teks menjadi rata kanan dan kiri */
+}
+
+/* CSS untuk container utama */
+.container {
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px;
+}
+
+/* CSS untuk kontainer ikon */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS untuk ikon */
+.icon {
+    text-align: center;
+    margin: 10px;
+}
+
+.icon img {
+    width: 109px;
+    height: 97px;
+    flex-shrink: 0;
+}
+
+/* CSS untuk caption nama ikon */
+.caption {
+    width: 242px;
+    height: 95px;
+    flex-shrink: 0;
+    color: #39239E;
+    text-align: center;
+    font-family: Red Hat Text;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 76.3%; /* 26.705px */
+    letter-spacing: -1.05px;
+}
+
+
+
+
+
+
+/* CSS untuk kontainer "About Us" */
+.divisi-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* Warna latar belakang kotak "About Us" */
+}
+
+/* CSS untuk gambar "Divisi" */
+.divisi-image img {
+    padding: 20px;
+    padding-left: 150px;
+    width: 376px;
+    height: 331px;
+    flex-shrink: 0;
+}
+
+/* CSS untuk teks "About Us" */
+.divisi-text {
+    margin-left: 70px; /* Jarak antara gambar dan teks "About Us" */
+}
+
+.divisi-text h2 {
+    width: 1000px;
+    height: 45px;
+    flex-shrink: 0;
+    color: #39239E;
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.3; /* 30.52px */
+    letter-spacing: -1.2px;
+}
+
+.divisi-text p {
+    width: 810px;
+    height: auto;
+    color: #000;
+    text-align: justify;
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.3; /* 19.075px */
+    letter-spacing: -0.75px;
+}
+
+
+
+/* CSS untuk footer */
+.footer {
+    background-color: #ffffff; /* Warna latar belakang footer */
+    color: rgb(0, 0, 0); /* Warna teks footer */
+    padding: 10px 0; /* Padding atas dan bawah diatur */
+    text-align: center; /* Tengahkan teks dalam footer */
+    z-index: 999; /* Mengatur tumpukan (z-index) untuk memastikan footer tampil di atas konten lain */
+}
